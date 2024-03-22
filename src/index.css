@@ -71,8 +71,9 @@ textarea:focus {
 }
 
 .save:hover {
-	background-color: #ededed;
 	cursor: pointer;
+	scale: 1.05;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .dark-mode .save{
@@ -86,6 +87,12 @@ textarea:focus {
 	border-radius: 15px;
 	padding: 10px 20px 10px 20px;
 	font-weight: bold;
+}
+
+.toggle-mode:hover {
+	cursor: pointer;
+	scale: 1.05;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .dark-mode .toggle-mode{
