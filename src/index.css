@@ -140,7 +140,7 @@ textarea:focus {
 	align-items: center;
 	background-color: rgb(233, 233, 233);
 	border-radius: 10px;
-	padding: 5px;
+	padding: 10px;
 	margin-bottom: 1.5em;
 }
 
@@ -153,3 +153,48 @@ textarea:focus {
 .search input:focus {
 	outline: none;
 }
+
+
+/* Generell mobilanpassning */
+@media screen and (max-width: 768px) {
+	.container {
+	  padding-right: 1rem;
+	  padding-left: 1rem;
+	}
+	
+	.notes-list {
+	  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+	
+	.note {
+	  min-height: 150px;
+	  padding: 0.5rem;
+	}
+  }
+  
+  /* Mobilanpassning för headern */
+  @media screen and (max-width: 480px) {
+	.header {
+	  flex-direction: column;
+	  align-items: stretch;
+	}
+  
+	.toggle-mode, .save {
+	  padding: 8px 10px;
+	  font-size: 0.8rem;
+	}
+
+	.toggle-mode{
+		margin: 0em 1em 1em 0em;
+	  }
+  }
+  
+  /* Mobilanpassning för sökrutan */
+  @media screen and (max-width: 480px) {
+	.search {
+	  margin-bottom: 1em;
+	}
+  
+	
+  }
+  
